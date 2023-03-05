@@ -1,7 +1,6 @@
-## AI Theories
+## Artificial Intelligence Theories
 
-### 2023/02/28
-## Linear Regression
-#### What is Regression
-#### What is Linear Regression
-#### Key Vocabs
+Each directory contains explanation of the theory and its implementation.
+
+### 2023/02/28 Lienar Regression
+
