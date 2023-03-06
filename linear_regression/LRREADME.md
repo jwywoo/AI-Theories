@@ -29,4 +29,10 @@ By getting the lowest cost we can get the closest hypothesis values.
 Thus, we can find a right `W(weight) and b(bias)` that represents the data set the most.
 
 
-
+### Step By Step
+1. Creating variables for weight(`w`) and bias(`b`), and training data based on `x_data`(given inputs) `y_data`(values to compare)
+2. Start training using for loop
+3. By using gradient descent we need to figure out new weight and bias
+4. By multiplying learning rate and using `assign_sub`(A = A-B), we get new weight and bias
+5. Repeat 3 and 4 until we find weight and bias that gives us the lowest cost.
+6. Now we have weight and bias that can predict new y if new x is given.
