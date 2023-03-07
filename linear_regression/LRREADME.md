@@ -1,5 +1,3 @@
-## AI Theories
-
 ### 2023/02/28
 ## Linear Regression
 
@@ -36,3 +34,27 @@ Thus, we can find a right `W(weight) and b(bias)` that represents the data set t
 4. By multiplying learning rate and using `assign_sub`(A = A-B), we get new weight and bias
 5. Repeat 3 and 4 until we find weight and bias that gives us the lowest cost.
 6. Now we have weight and bias that can predict new y if new x is given.
+
+### 2023/03/06
+## Gradient Descent for linear regression
+After we calculated cost based on the hypothesis model, it is important to update W and b.
+Since we need the right W and b values that results the lowest cost. Then how?
+For this  we need to use Gradient Descent Algorithm. Gradient Descent Algorithm changes value of W by the gradient.
+And this will lead us to get the local minimum(not global minimum).
+We can get gradient by derivative function of cost function.
+For linear regression we will use this cost function to get the derivative. 
+
+![](pictures/LinearRegressionGradientDescentCost.png)
+
+This is new cost function after removing bias at the hypothesis.
+If we get the derivative of the new cost function respect to W. It looks like the one in below.
+
+![](pictures/Derivative.png)
+
+Now we can make Gradient Descent Algorithm like this.
+
+![](pictures/LinearRegressionGradientDescent.png)
+
+Learning rate is most likely less than 1 ,and it is about how much we want to apply.
+This is already implemented as `tape.gradient()` in tensorflow.
+
